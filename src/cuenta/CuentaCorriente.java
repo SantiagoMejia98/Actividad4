@@ -36,13 +36,8 @@ public class CuentaCorriente extends Cuenta {
         super.extractoMensual();
     }
 
-    @Override
-    public String toString() {
-        return "CuentaCorriente{" +
-                "saldo=" + saldo +
-                ", comisionMensual=" + comisionMensual +
-                ", numeroTransacciones=" + (numeroConsignaciones + numeroRetiros) +
-                ", sobregiro=" + sobregiro +
-                '}';
+    public void imprimir(){
+        super.imprimir();
+        System.out.println("Valor del sobregiro: $" + sobregiro);
     }
 }

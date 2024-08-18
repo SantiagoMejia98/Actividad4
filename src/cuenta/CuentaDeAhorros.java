@@ -34,7 +34,6 @@ public class CuentaDeAhorros extends Cuenta{
         if(numeroRetiros > 4){
             comisionMensual += (numeroRetiros - 4) * 1000;
         }
-
         super.extractoMensual();
 
         if(saldo < 10000){
@@ -42,12 +41,7 @@ public class CuentaDeAhorros extends Cuenta{
         }
     }
 
-    @Override
-    public String toString() {
-        return "CuentaDeAhorros{" +
-                "saldo=" + saldo +
-                ", comision Mensual=" + comisionMensual +
-                ", numeroDeTransacciones =" + (numeroConsignaciones + numeroRetiros) +
-                '}';
+    public void imprimir(){
+        super.imprimir();
     }
 }
