@@ -25,7 +25,7 @@ public class Cuenta {
             saldo -= cantidad;
             numeroRetiros++;
             System.out.println("Retiro exitoso");
-            System.out.println("\nNuevo saldo: " + saldo);
+            System.out.println("Nuevo saldo: " + saldo);
         }else {
             System.out.println("Saldo insuficiente");
         }
