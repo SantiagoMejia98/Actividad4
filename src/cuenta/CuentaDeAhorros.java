@@ -42,6 +42,7 @@ public class CuentaDeAhorros extends Cuenta{
     }
 
     public void imprimir(){
+        System.out.println("\nCuenta de ahorros");
         super.imprimir();
     }
 }

@@ -9,23 +9,24 @@ public class CuentaCorriente extends Cuenta {
     }
 
     public void retirar(float cantidad) {
-        if(cantidad > saldo) {
-            sobregiro += cantidad - saldo;
-            saldo = 0;
+        float resultado = saldo - cantidad;
+        if(resultado < 0) {
+            sobregiro -= resultado;
+            super.retirar(saldo);
         }else{
             super.retirar(cantidad);
         }
     }
 
     public void consignar(float cantidad) {
-        float residuo = sobregiro - cantidad;
+        float residuo = cantidad - sobregiro;
         if(sobregiro > 0) {
             if(residuo > 0) {
                 sobregiro = 0;
-                saldo = residuo;
+                super.consignar(residuo);
             }else{
-                sobregiro = -residuo;
-                saldo = 0;
+                sobregiro = residuo;
+                super.consignar(0);
             }
         }else{
             super.consignar(cantidad);
@@ -37,7 +38,8 @@ public class CuentaCorriente extends Cuenta {
     }
 
     public void imprimir(){
+        System.out.println("\nCuenta corriente");
         super.imprimir();
-        System.out.println("Valor del sobregiro: $" + sobregiro);
+        System.out.println("Valor del sobregiro: $ " + sobregiro);
     }
 }
