@@ -14,6 +14,7 @@ public class CasaRural extends Casa{
     }
 
     public void imprimir(){
+        System.out.println("\nCasa rural");
         super.imprimir();
         System.out.println("Distancia la cabecera municipal: " + distanciaCabecera + " km");
         System.out.println("Altitud sobre el nivel del mar: " + altitud + " metros");

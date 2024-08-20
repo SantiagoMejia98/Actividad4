@@ -13,41 +13,41 @@ public abstract class Ciclista {
 
     abstract String imprimirTipo();
 
-    protected int getIdentificador() {
+    public int getIdentificador() {
         return identificador;
     }
 
-    protected void setIdentificador(int identificador) {
+    public void setIdentificador(int identificador) {
         this.identificador = identificador;
     }
 
-    protected String getNombre() {
+    public String getNombre() {
         return nombre;
     }
 
-    protected void setNombre(String nombre) {
+    public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    protected int getPosicionGeneral(int posicionGeneral){
+    public int getPosicionGeneral(int posicionGeneral){
         return posicionGeneral;
     }
 
-    protected void setPosicionGeneral(int posicionGeneral){
+    public void setPosicionGeneral(int posicionGeneral){
         posicionGeneral = posicionGeneral;
     }
 
-    protected int getTiempoAcumulado() {
+    public int getTiempoAcumulado() {
         return tiempoAcumulado;
     }
 
-    protected void setTiempoAcumulado(int tiempoAcumulado) {
+    public void setTiempoAcumulado(int tiempoAcumulado) {
         this.tiempoAcumulado = tiempoAcumulado;
     }
 
-    protected void imprimir() {
+    public void imprimir() {
         System.out.println("Identificador: " + identificador);
         System.out.println("Nombre: " + nombre);
-        System.out.println("Tiempo Acumulado: " + tiempoAcumulado);
+        System.out.println("Tiempo Acumulado: " + tiempoAcumulado + " min");
     }
 }

@@ -10,6 +10,7 @@ public class CasaIndependiente extends CasaUrbana {
     }
 
     public void imprimir(){
+        System.out.println("\nCasa independiente");
         super.imprimir();
     }
 }

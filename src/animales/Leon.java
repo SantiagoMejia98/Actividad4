@@ -1,6 +1,6 @@
 package animales;
 
-public class Leon extends Feplino{
+public class Leon extends Felino{
 
     public String getSonido() {
         return "Rugido";
@@ -11,7 +11,7 @@ public class Leon extends Feplino{
     }
 
     public String getHabitat() {
-        return "Praderas";
+        return "Pradera";
     }
 
     public String getNombreCientifico() {

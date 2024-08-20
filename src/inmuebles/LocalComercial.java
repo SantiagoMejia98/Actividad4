@@ -12,6 +12,7 @@ public class LocalComercial extends Local{
     }
 
     public void imprimir(){
+        System.out.println("\nLocal comercial");
         super.imprimir();
         System.out.println("Centro comercial: " + centroComercial);
     }

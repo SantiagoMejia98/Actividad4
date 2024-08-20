@@ -11,29 +11,29 @@ public class Escalador extends Ciclista{
         this.gradoRampa = gradoRampa;
     }
 
-    protected double getAceleracionPromedio() {
+    public double getAceleracionPromedio() {
         return aceleracionPromedio;
     }
 
-    protected void setAceleracionPromedio(double aceleracionPromedio) {
+    public void setAceleracionPromedio(double aceleracionPromedio) {
         this.aceleracionPromedio = aceleracionPromedio;
     }
 
-    protected double getGradoRampa() {
+    public double getGradoRampa() {
         return gradoRampa;
     }
 
-    protected void setGradoRampa(double gradoRampa) {
+    public void setGradoRampa(double gradoRampa) {
         this.gradoRampa = gradoRampa;
     }
 
-    protected String imprimirTipo() {
+    public String imprimirTipo() {
         return "Es un escalador";
     }
 
-    protected void imprimir() {
-        super.imprimir(); // Invoca el método imprimir de la clase padre
-        System.out.println("Aceleración promedio: " + aceleracionPromedio);
-        System.out.println("Grado de rampa: " + gradoRampa);
+    public void imprimir() {
+        super.imprimir();
+        System.out.println("Aceleración promedio: " + aceleracionPromedio + " m/s^2");
+        System.out.println("Grado de rampa: " + gradoRampa + " °");
     }
 }

@@ -11,29 +11,29 @@ public class Velocista extends Ciclista{
         this.velocidadPromedio = velocidadPromedio;
     }
 
-    protected double getPotenciaPromedio() {
+    public double getPotenciaPromedio() {
         return potenciaPromedio;
     }
 
-    protected void setPotenciaPromedio(double potenciaPromedio) {
+    public void setPotenciaPromedio(double potenciaPromedio) {
         this.potenciaPromedio = potenciaPromedio;
     }
 
-    protected double getvelocidadPromedio() {
+    public double getvelocidadPromedio() {
         return velocidadPromedio;
     }
 
-    protected void setVelocidadPromedio(double velocidadPromedio) {
+    public void setVelocidadPromedio(double velocidadPromedio) {
         this.velocidadPromedio = velocidadPromedio;
     }
 
-    protected String imprimirTipo() {
+    public String imprimirTipo() {
         return "Es un velocista";
     }
 
-    protected void imprimir() {
-        super.imprimir(); // Invoca al método imprimir de la clase padre
-        System.out.println("Potencia promedio: " + potenciaPromedio);
-        System.out.println("Velocidad promedio: " + velocidadPromedio);
+    public void imprimir() {
+        super.imprimir();
+        System.out.println("Potencia promedio: " + potenciaPromedio + " vatios");
+        System.out.println("Velocidad promedio: " + velocidadPromedio + " Km/h");
     }
 }

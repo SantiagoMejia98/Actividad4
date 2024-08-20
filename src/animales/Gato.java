@@ -1,6 +1,6 @@
 package animales;
 
-public class Gato extends Feplino{
+public class Gato extends Felino {
 
     public String getSonido() {
         return "Maullido";

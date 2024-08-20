@@ -8,7 +8,7 @@ public class Equipo {
     private String nombre;
     private static double totalTiempo;
     private String pais;
-    Vector listaCiclistas;
+    private Vector listaCiclistas;
 
     public Equipo(String nombre, String pais) {
         this.nombre = nombre;
@@ -66,6 +66,6 @@ public class Equipo {
     public void imprimir(){
         System.out.println("Nombre del equipo: " + nombre);
         System.out.println("País: " + pais);
-        System.out.println("Total tiempo del equipo: " + totalTiempo);
+        System.out.println("Total tiempo del equipo: " + totalTiempo + " min");
     }
 }

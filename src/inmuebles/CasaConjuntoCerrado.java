@@ -15,6 +15,7 @@ public class CasaConjuntoCerrado extends CasaUrbana {
     }
 
     public void imprimir(){
+        System.out.println("\nConjunto cerrado");
         super.imprimir();
         System.out.println("Valor de la administración: $ " + valorAdministracion);
         if(tienePiscina){

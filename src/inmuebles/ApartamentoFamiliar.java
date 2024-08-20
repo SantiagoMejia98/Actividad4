@@ -12,6 +12,7 @@ public class ApartamentoFamiliar extends Apartamento {
     }
 
     public void imprimir(){
+        System.out.println("\nApartamento familiar");
         super.imprimir();
         System.out.println("Valor de la administración: $ " + valorAdministracion);
     }

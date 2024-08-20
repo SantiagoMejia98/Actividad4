@@ -9,6 +9,7 @@ public class Apartaestudio extends Apartamento{
     }
 
     public void imprimir(){
+        System.out.println("\nApartaestudio");
         super.imprimir();
     }
 }

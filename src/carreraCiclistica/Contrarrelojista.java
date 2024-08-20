@@ -9,20 +9,20 @@ public class Contrarrelojista extends Ciclista{
         this.velocidadMaxima = velocidadMaxima;
     }
 
-    protected double getVelocidadMaxima() {
+    public double getVelocidadMaxima() {
         return velocidadMaxima;
     }
 
-    protected void setVelocidadMaxima(double velocidadMaxima) {
+    public void setVelocidadMaxima(double velocidadMaxima) {
         this.velocidadMaxima = velocidadMaxima;
     }
 
-    protected String imprimirTipo() {
+    public String imprimirTipo() {
         return "Es un constrarrelojista";
     }
 
-    protected void imprimir() {
-        super.imprimir(); // Invoca el método imprimir de la clase padre
-        System.out.println("Aceleración promedio: " + velocidadMaxima);
+    public void imprimir() {
+        super.imprimir();
+        System.out.println("Aceleración promedio: " + velocidadMaxima + " km/h");
     }
 }

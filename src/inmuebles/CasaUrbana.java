@@ -8,6 +8,7 @@ public class CasaUrbana extends Casa{
     }
 
     public void imprimir(){
+        System.out.println("\nCasa urbana");
         super.imprimir();
     }
 }
