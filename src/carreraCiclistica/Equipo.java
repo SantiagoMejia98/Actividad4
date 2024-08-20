@@ -46,14 +46,17 @@ public class Equipo {
 
     public void buscarCiclista(){
         Scanner teclado = new Scanner(System.in);
-        String nombreCiclista = teclado.nextLine();
+        System.out.print("Ingresa el identificador del ciclista que desea buscar: ");
+        int identificador = teclado.nextInt();
 
         for (int i = 0; i < listaCiclistas.size(); i++) {
             Ciclista c = (Ciclista) listaCiclistas.elementAt(i);
-            if(c.getNombre().equals(nombreCiclista)){
-                System.out.println(c.getNombre());
+            if(c.getIdentificador() == identificador){
+                c.imprimir();
+                return;
             }
         }
+        System.out.println("No se encontró el ciclista");
     }
 
     public void calcularTiempoTotal(){

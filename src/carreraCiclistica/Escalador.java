@@ -33,6 +33,7 @@ public class Escalador extends Ciclista{
 
     public void imprimir() {
         super.imprimir();
+        System.out.println(imprimirTipo());
         System.out.println("Aceleración promedio: " + aceleracionPromedio + " m/s^2");
         System.out.println("Grado de rampa: " + gradoRampa + " °");
     }

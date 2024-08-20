@@ -16,5 +16,7 @@ public class Prueba {
         equipo1.calcularTiempoTotal();
         equipo1.imprimir();
         equipo1.listarEquipo();
+
+        equipo1.buscarCiclista();
     }
 }

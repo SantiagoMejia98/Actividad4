@@ -33,6 +33,7 @@ public class Velocista extends Ciclista{
 
     public void imprimir() {
         super.imprimir();
+        System.out.println(imprimirTipo());
         System.out.println("Potencia promedio: " + potenciaPromedio + " vatios");
         System.out.println("Velocidad promedio: " + velocidadPromedio + " Km/h");
     }

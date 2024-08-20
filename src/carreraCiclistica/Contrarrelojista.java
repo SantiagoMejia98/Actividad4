@@ -23,6 +23,7 @@ public class Contrarrelojista extends Ciclista{
 
     public void imprimir() {
         super.imprimir();
+        System.out.println(imprimirTipo());
         System.out.println("Aceleración promedio: " + velocidadMaxima + " km/h");
     }
 }
