@@ -7,7 +7,7 @@ public class Prueba {
         System.out.println("Datos apartamento");
         apto1.calcularPrecioVenta(apto1.valorArea);
         apto1.imprimir();
-        System.out.println("Datos apartamento");
+        System.out.println("\nDatos apartamento");
         Apartaestudio aptestudio1 = new Apartaestudio(12354,50,"Avenida Caracas 30-15");
         aptestudio1.calcularPrecioVenta(aptestudio1.valorArea);
         aptestudio1.imprimir();

@@ -18,9 +18,6 @@ public class PruebaCuenta {
         System.out.print("Ingresar cantidad a retirar: $ ");
         float cantidadRetirar = input.nextFloat();
         cuenta1.retirar(cantidadRetirar);
-        System.out.print("Ingresar cantidad a consignar: $ ");
-        cantidadDepositar = input.nextFloat();
-        cuenta1.consignar(cantidadDepositar);
         cuenta1.extractoMensual();
         cuenta1.imprimir();
     }
