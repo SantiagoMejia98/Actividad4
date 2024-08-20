@@ -11,7 +11,7 @@ public class PruebaCuenta {
         float saldoInicialAhorros = input.nextFloat();
         System.out.print("Ingrese tasa de interés: ");
         float tasaAhorros = input.nextFloat();
-        CuentaCorriente cuenta1 = new CuentaCorriente(saldoInicialAhorros, tasaAhorros);
+        CuentaDeAhorros cuenta1 = new CuentaDeAhorros(saldoInicialAhorros, tasaAhorros);
         System.out.print("Ingresar cantidad a consignar: $ ");
         float cantidadDepositar = input.nextFloat();
         cuenta1.consignar(cantidadDepositar);

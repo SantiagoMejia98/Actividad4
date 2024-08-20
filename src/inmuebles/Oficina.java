@@ -12,6 +12,10 @@ public class Oficina extends Local{
 
     public void imprimir(){
         super.imprimir();
-        System.out.println("Es oficina del gobierno'. " + esGobierno);
+        if(esGobierno){
+            System.out.println("Es oficina del gobierno");
+        }else{
+            System.out.println("No es oficina del gobierno");
+        }
     }
 }

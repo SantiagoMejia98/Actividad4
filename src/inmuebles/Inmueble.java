@@ -20,8 +20,8 @@ public class Inmueble {
 
     public void imprimir(){
         System.out.println("Identificador inmobiliario: " + identificadorInmobiliario);
-        System.out.println("Área: " + area);
+        System.out.println("Área: " + area + " metros cuadrados");
         System.out.println("Dirección: " + direccion);
-        System.out.println("Precio de venta: $" + precioVenta);
+        System.out.println("Precio de venta: $ " + precioVenta);
     }
 }

@@ -44,5 +44,10 @@ public class CuentaDeAhorros extends Cuenta{
     public void imprimir(){
         System.out.println("\nCuenta de ahorros");
         super.imprimir();
+        if(activa){
+            System.out.println("La cuenta esta activa");
+        }else{
+            System.out.println("La cuenta no esta activa");
+        }
     }
 }

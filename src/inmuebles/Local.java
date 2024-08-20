@@ -13,7 +13,7 @@ public class Local extends Inmueble{
 
     public void imprimir(){
         super.imprimir();
-        System.out.println("Tipo de local: "+tipoLocal);
+        System.out.println("Tipo de local: " + tipoLocal);
     }
 
 }

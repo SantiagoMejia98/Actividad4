@@ -16,6 +16,7 @@ public class CuentaCorriente extends Cuenta {
         }else{
             super.retirar(cantidad);
         }
+        System.out.println("Sobregiro: " + sobregiro);
     }
 
     public void consignar(float cantidad) {
@@ -25,9 +26,10 @@ public class CuentaCorriente extends Cuenta {
                 sobregiro = 0;
                 super.consignar(residuo);
             }else{
-                sobregiro = residuo;
+                sobregiro = -residuo;
                 super.consignar(0);
             }
+            System.out.println("Sobregiro: " + sobregiro);
         }else{
             super.consignar(cantidad);
         }
